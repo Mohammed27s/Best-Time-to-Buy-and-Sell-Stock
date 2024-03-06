@@ -1,0 +1,96 @@
+import java.util.Arrays;
+
+public class SellStock {
+
+    public static void main(String[] args){
+
+
+      Integer[] stockSellPrices1 = new Integer[]{7, 1, 5, 3, 6, 4};
+      Integer[] stockSellPrices2 = new Integer[]{7, 6, 4, 3, 1};
+      Integer[] stockSellPrices3 = new Integer[]{1, 2, 3, 4, 5};
+      Integer[] stockSellPrices4  = new Integer[]{3, 5, 1, 7, 4, 9};
+
+
+
+      for(Integer i = 0; i <= stockSellPrices1.length - 1; i++){
+
+          if(stockSellPrices1[i] == 1){
+
+              System.out.println("The lowest price of the product in stock on day 2, price = "+stockSellPrices1[i]+"\n");
+          }
+
+
+          if(stockSellPrices1[i] == 6){
+
+              System.out.println("The higher price value in the stock to sell on day 5, price = "+stockSellPrices1[i]+"\n");
+          }
+
+      }
+
+          System.out.println("for the first stock, The profit you will get from selling on product = "+(6-1)+"\n");
+
+
+
+        for(Integer j = 0; j <= stockSellPrices2.length -1; j++){
+
+          if (stockSellPrices2[j] > 0){
+
+
+              System.out.println("No profit"+"\n");
+          }
+          else if (stockSellPrices2[j] != 1) {
+
+              System.out.println("No profit");
+
+          }
+
+            break;
+        }
+
+        System.out.println("The second stock. Prices go up every day, so you make a profit by buying at " +
+                "the start and selling at the end. the profit will be, profit = 0"+"\n");
+
+
+        for(Integer l = 0; l <= stockSellPrices3.length - 1; l++){
+
+            if(stockSellPrices3[l] == 1){
+
+                System.out.println("The lowest price in the stock on day 1, price = "+stockSellPrices3[l]+"\n");
+            }
+
+            if(stockSellPrices3[l] == 5){
+
+                System.out.println("The higher price on stock on day 5, price = "+stockSellPrices3[l]+"\n");
+            }
+
+        }
+
+        System.out.println("The third stock,  the total profit for selling one product, profit = "+(5-1)+"\n");
+
+
+        for(Integer p = 0; p <= stockSellPrices4.length - 1; p++){
+
+
+            if(stockSellPrices4[p] <= 1){
+
+                System.out.println("The lowest price in the stock on day 3, price = "+stockSellPrices4[p]+"\n");
+            }
+
+            if(stockSellPrices4[p] == 9){
+
+                System.out.println("The higher price on the stock on the last day, price = "+stockSellPrices4[p]+"\n");
+            }
+
+        }
+
+
+        System.out.println("The fourth stock, the total profit for selling one product, profit = "+(9-1));
+
+
+
+
+
+
+
+    }
+}
